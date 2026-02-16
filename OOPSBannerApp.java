@@ -4,13 +4,46 @@ public class OOPSBannerApp {
 
         // Each letter is 7 rows high and 9 characters wide
 
-        System.out.println("  *****  " + "  *****  " + "  ****** " + "  *****  ");
-        System.out.println(" *     * " + " *     * " + " *     * " + " *     * ");
-        System.out.println("*       *" + "*       *" + " *     * " + "*       ");
-        System.out.println("*       *" + "*       *" + " ******  " + " *****   ");
-        System.out.println("*       *" + "*       *" + " *        " + "      *  ");
-        System.out.println(" *     * " + " *     * " + " *        " + " *     * ");
-        System.out.println("  *****  " + "  *****  " + " *        " + "  *****  ");
+        System.out.println(String.join("",
+                "  *****  ",
+                "  *****  ",
+                "  ****** ",
+                "  *****  "));
 
+        System.out.println(String.join("",
+                " *     * ",
+                " *     * ",
+                " *     * ",
+                " *     * "));
+
+        System.out.println(String.join("",
+                "*       *",
+                "*       *",
+                " *     * ",
+                "*        "));
+
+        System.out.println(String.join("",
+                "*       *",
+                "*       *",
+                " ******  ",
+                " *****   "));
+
+        System.out.println(String.join("",
+                "*       *",
+                "*       *",
+                " *        ",
+                "      *  "));
+
+        System.out.println(String.join("",
+                " *     * ",
+                " *     * ",
+                " *        ",
+                " *     * "));
+
+        System.out.println(String.join("",
+                "  *****  ",
+                "  *****  ",
+                " *        ",
+                "  *****  "));
     }
 }
