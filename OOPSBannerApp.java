@@ -2,18 +2,17 @@ public class OOPSBannerApp {
 
     public static void main(String[] args) {
 
-        String[] bannerLines = new String[7];
+        String[] lines = {
+            String.join("  ", " ***** ", " ***** ", " ****** ", " ***** "),
+            String.join("  ", "*     *", "*     *", "*     *", "*     *"),
+            String.join("  ", "*     *", "*     *", "*     *", "*      "),
+            String.join("  ", "*     *", "*     *", "****** ", " ***** "),
+            String.join("  ", "*     *", "*     *", "*      ", "      *"),
+            String.join("  ", "*     *", "*     *", "*      ", "*     *"),
+            String.join("  ", " ***** ", " ***** ", "*      ", " ***** ")
+        };
 
-        // Each letter width is consistent now → O  O  P  S
-        bannerLines[0] = String.join("  ", " ***** ", " ***** ", " ****** ", " ***** ");
-        bannerLines[1] = String.join("  ", "*     *", "*     *", "*     *", "*     *");
-        bannerLines[2] = String.join("  ", "*     *", "*     *", "*     *", "*      ");
-        bannerLines[3] = String.join("  ", "*     *", "*     *", "****** ", " ***** ");
-        bannerLines[4] = String.join("  ", "*     *", "*     *", "*      ", "      *");
-        bannerLines[5] = String.join("  ", "*     *", "*     *", "*      ", "*     *");
-        bannerLines[6] = String.join("  ", " ***** ", " ***** ", "*      ", " ***** ");
-
-        for (String line : bannerLines) {
+        for (String line : lines) {
             System.out.println(line);
         }
     }
