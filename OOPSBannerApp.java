@@ -2,48 +2,19 @@ public class OOPSBannerApp {
 
     public static void main(String[] args) {
 
-        // Each letter is 7 rows high and 9 characters wide
+        String[] bannerLines = new String[7];
 
-        System.out.println(String.join("",
-                "  *****  ",
-                "  *****  ",
-                "  ****** ",
-                "  *****  "));
+        // Each letter width is consistent now → O  O  P  S
+        bannerLines[0] = String.join("  ", " ***** ", " ***** ", " ****** ", " ***** ");
+        bannerLines[1] = String.join("  ", "*     *", "*     *", "*     *", "*     *");
+        bannerLines[2] = String.join("  ", "*     *", "*     *", "*     *", "*      ");
+        bannerLines[3] = String.join("  ", "*     *", "*     *", "****** ", " ***** ");
+        bannerLines[4] = String.join("  ", "*     *", "*     *", "*      ", "      *");
+        bannerLines[5] = String.join("  ", "*     *", "*     *", "*      ", "*     *");
+        bannerLines[6] = String.join("  ", " ***** ", " ***** ", "*      ", " ***** ");
 
-        System.out.println(String.join("",
-                " *     * ",
-                " *     * ",
-                " *     * ",
-                " *     * "));
-
-        System.out.println(String.join("",
-                "*       *",
-                "*       *",
-                " *     * ",
-                "*        "));
-
-        System.out.println(String.join("",
-                "*       *",
-                "*       *",
-                " ******  ",
-                " *****   "));
-
-        System.out.println(String.join("",
-                "*       *",
-                "*       *",
-                " *        ",
-                "      *  "));
-
-        System.out.println(String.join("",
-                " *     * ",
-                " *     * ",
-                " *        ",
-                " *     * "));
-
-        System.out.println(String.join("",
-                "  *****  ",
-                "  *****  ",
-                " *        ",
-                "  *****  "));
+        for (String line : bannerLines) {
+            System.out.println(line);
+        }
     }
 }
